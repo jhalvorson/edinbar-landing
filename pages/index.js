@@ -32,7 +32,13 @@ function App() {
           h5,
           h6 {
             color: #393939;
-            font-weight: 400
+            font-weight: 400;
+            margin: 0;
+          }
+
+          p {
+            line-height: 1.45;
+            font-size: 16px;
           }
         `}
       </style>
