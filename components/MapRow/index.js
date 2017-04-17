@@ -5,7 +5,7 @@ function Map() {
     <section className="map-row">
       <div className="content">
         <div className="content-inner">
-          <h2>Navigate around the best spots in Edinburgh</h2>
+          <h2>Navigate around the best<br /> spots in Edinburgh</h2>
 
           <p>Bored of the same pint of T over and over again? So you should be.</p>
 
@@ -30,27 +30,24 @@ function Map() {
 
         .content {
           display: flex;
-          flex: 0 1 60%;
+          flex: 0 1 50%;
+          padding: 90px 120px;
         }
 
         .content-inner {
           margin: auto;
         }
 
-        .content {
-          padding: 90px 120px;
-        }
-
         h2 {
           font-size: 34px;
-          font-weight: 600;
+          font-weight: 500;
           padding-bottom: 30px;
           margin-top: auto;
         }
 
         .map {
           background-color: red;
-          flex: 1 0 40%;
+          flex: 1 0 50%;
         }
       `}
       </style>

@@ -31,13 +31,13 @@ function Navigation() {
 
           .logo {
             font-weight: 600;
-            font-size: 22px;
+            font-size: 20px;
           }
 
           .subline {
             padding-left: 10px;
             font-weight: 300;
-            font-size: 18px;
+            font-size: 16px;
             color: #969696;
           }
         `}
