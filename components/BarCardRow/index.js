@@ -7,7 +7,7 @@ function BarCardRow() {
         <h2>Bar cards here</h2>
       </div>
     </section>
-  )
+  );
 }
 
 export default BarCardRow;

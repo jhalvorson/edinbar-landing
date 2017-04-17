@@ -7,7 +7,7 @@ function Map() {
         <h2>Map goes here</h2>
       </div>
     </section>
-  )
+  );
 }
 
 export default Map;
