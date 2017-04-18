@@ -21,17 +21,17 @@ function Map() {
       <style jsx>
       {`
         .map-row {
-          height: 100vh;
           min-height: 600px;
           display: flex;
           flex-direction: row;
           flex: 1 0 auto;
+          flex-wrap: wrap;
         }
 
         .content {
           display: flex;
-          flex: 0 1 50%;
-          padding: 90px 120px;
+          flex: 0 1 100%;
+          padding: 70px 45px;
         }
 
         .content-inner {
@@ -47,7 +47,28 @@ function Map() {
 
         .map {
           background-color: red;
-          flex: 1 0 50%;
+          flex: 1 0 100%;
+          min-height: 450px;
+        }
+
+        @media (min-width: 768px) {
+
+          .map-row {
+            height: 100vh;
+            flex-wrap: nowrap;
+          }
+
+          .content {
+            display: flex;
+            flex: 0 1 50%;
+            padding: 90px 120px;
+          }
+
+          .map {
+            background-color: red;
+            flex: 1 0 50%;
+            min-height: auto;
+          }
         }
       `}
       </style>

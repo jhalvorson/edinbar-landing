@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import MapRow from '../components/MapRow';
 import BarCardRow from '../components/BarCardRow';
+import Footer from '../components/Footer';
 
 function App() {
   return (
@@ -16,13 +17,20 @@ function App() {
       <Header />
       <MapRow />
       <BarCardRow />
-
+      <Footer />
       <style jsx global>
         {`
           body {
             background: #fff;
+            max-width: 1440px;
+            display: block;
+            margin: 0 auto;
             color: #393939;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+          }
+
+          html {
+            background-color: #f9f9f9;
           }
 
           h1,

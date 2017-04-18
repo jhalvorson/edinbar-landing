@@ -26,11 +26,11 @@ function BarCardRow() {
       <style jsx>
         {`
           .card-row {
-            height: 100vh;
             min-height: 600px;
             display: flex;
             flex-direction: row;
             flex: 1 0 auto;
+            flex-wrap: wrap;
           }
 
           img {
@@ -40,7 +40,8 @@ function BarCardRow() {
 
           .cards {
             display: flex;
-            flex: 0 1 50%;
+            flex: 0 1 100%;
+            order: 2;
           }
 
           .cards-inner {
@@ -49,8 +50,9 @@ function BarCardRow() {
 
           .content {
             display: flex;
-            flex: 0 1 50%;
-            padding: 90px 120px;
+            flex: 0 1 100%;
+            padding: 60px 45px;
+            order: 1;
           }
 
           h2 {
@@ -62,6 +64,27 @@ function BarCardRow() {
 
           .content-inner {
             margin: auto;
+          }
+
+          @media (min-width: 768px) {
+
+            .card-row {
+              height: 100vh;
+              flex-wrap: nowrap;
+            }
+
+            .cards {
+              display: flex;
+              flex: 0 1 50%;
+              order: 1;
+            }
+
+            .content {
+              display: flex;
+              flex: 0 1 50%;
+              padding: 90px 120px;
+              order: 2;
+            }
           }
 
         `}

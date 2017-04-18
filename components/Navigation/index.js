@@ -18,7 +18,7 @@ function Navigation() {
         {`
 
           .nav {
-            padding: 20px 40px 0 40px;
+            padding: 40px 40px 0 40px;
             display: flex;
             flex: 1;
             justify-content: space-between;

@@ -3,8 +3,10 @@ import React from 'react';
 function Header() {
   return (
     <header className={'header'}>
-      <h1>Nae more boring beer</h1>
-      <h2 className={'header-sub'}>Available on iOS and Android</h2>
+      <div className="content">
+        <h1>Nae more boring beer</h1>
+        <h2 className={'header-sub'}>Available on <a href="">iOS</a> and <a href="">Android</a></h2>
+      </div>
       <div className="hero">
         <img
           className={'hero-image'}
@@ -18,7 +20,6 @@ function Header() {
           h1 {
             font-size: 49px;
             text-align: center;
-            margin-top: 150px;
             margin-bottom: 15px;
             font-weight: 200;
           }
@@ -30,7 +31,7 @@ function Header() {
             display: flex;
             flex-direction: column;
             flex: 1 0 auto;
-            margin-top: -45px;
+            margin-top: -60px;
           }
 
           .header-sub {
@@ -41,12 +42,23 @@ function Header() {
           }
 
           .hero {
-            margin-top: auto;
+            margin-top: 40px;
           }
 
           .hero-image {
             max-width: 100%;
           }
+
+          .content {
+            margin-top: auto;
+          }
+
+          @media (min-width: 768px) {
+            .hero {
+              margin-top: 60px;
+            }
+          }
+
       `}
       </style>
     </header>
